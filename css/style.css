@@ -64,7 +64,7 @@ body {
    justify-content: space-between;
    align-items: center;
    position: relative;
-   padding-top: 55px;
+   padding: 55px 0;
 }
 
 .header__list-left, .header__list-right {
@@ -112,11 +112,19 @@ body {
 }
 
 .main__content {
-   padding: 166px 0 222px 0;
+   padding: 60px 0 222px 0;
    background-image: url('../img/working_with_computer.png');
    background-repeat: no-repeat;
    background-position: left calc(50% + 430px) top 100px;
    position: relative;
+}
+
+.main__content-img {
+   display: none;
+}
+
+.main__content-png {
+   width: 100%;
 }
 
 .main__title {
@@ -227,34 +235,34 @@ body {
 
 .main__cards {
    display: flex;
+   justify-content: space-between;
    margin-top: 100px;
    margin-bottom: 208px;
-   position: relative;
-   z-index: 99;
    flex-wrap: wrap;
+   position: relative;
 }
 
 .main__img-vector {
    position: absolute;
    top: 150px;
+   width: 100%;
+   max-width: 1100px;
 }
 
 .main__card {
    padding: 72px 32px 40px 32px;
    background-color: var(--white-text-color);
    position: relative;
+   max-height: 267px;
+   height: 100%;
 }
 
 .main__card:nth-child(2) {
-   position: absolute;
-   left: 400px;
-   top: 44px;
+   margin-top: -60px;
 }
 
-.main__card:nth-child(3) {
-   position: absolute;
-   top: 88px;
-   right: 50px;
+.main__card:last-child {
+   margin-top: 60px;
 }
 
 .main__img-bg {
@@ -378,4 +386,10 @@ body {
 
 .footer-media__icon:hover {
    color: var(--button-bg-color);
+}
+
+.footer__links {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
 }
